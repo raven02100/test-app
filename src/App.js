@@ -5,20 +5,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="toolbar">Toolbar here</div>
+        <img 
+          className="logo"
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </img>
+          <input className="search-box" placeholder="WRITE YOUR NAME HERE" />
+          <div className="action-button-container">
+            <button className="action-button" onclick="callServer()">Google Search</button>
+            <button className="action-button">I'm Feeling Lucky</button>
+          </div>
     </div>
   );
 }
